@@ -54,58 +54,91 @@ export default function HomePage() {
           </p>
         </div>
 
-        <aside className="sidebar">
-          <div className="sidebar-content">
-            <h2 className="sidebar-title">Last news</h2>
-            <img src="/images/icons/x.svg" alt="x" className="x-icon" />
+        <aside class="sidebar">
+          <div class="sidebar-content">
+            <h2 class="sidebar-title">Last news</h2>
+            <img src="images/icons/x.svg" alt="x" class="x-icon">
           </div>
-
-          <div className="news-all">
-            {[
-              {
-                date: "08.05.2025",
-                views: 1245,
-                title: 'Its official: The second season of "Solo Leveling" is announced for 2026!',
-                text: "In a short time, Sakura not only found loyal friends, with whom he would go into fire and water, but also became a captain",
-                author: "Sitrix"
-              },
-              {
-                date: "03.09.2025",
-                views: 2506,
-                title: 'Its official: "Attack on Titan" will get a feature film in 2026!',
-                text: "After the end of the main series, fans do not say goodbye to the titans! Studio MAPPA has confirmed the work on the film...",
-                author: "Artics"
-              },
-              {
-                date: "08.07.2025",
-                views: 1000,
-                title: 'A new anime adaptation of "Bleach: Hell Arc" has been announced!',
-                text: "Tite Kubo is back! The story will continue in the 'Infernal Arc', where Ichigo, together with his former allies, will face dangers...",
-                author: "ArtCraft"
-              },
-              {
-                date: "10.05.2025",
-                views: 1246,
-                title: '"Chainsaw Man" will get a spin-off about the Lord of Darkness',
-                text: "Studio MAPPA has officially confirmed the expansion of the franchise. The series will explore the origins of one of the world's most mysterious demons...",
-                author: "biggy"
-              }
-            ].map((news, index) => (
-              <div key={index} className="news-1">
-                <div className="info1">
-                  <img src="/images/icons/date.svg" alt="date" className="date-icon" />
-                  <span className="date">{news.date}</span>
-                  <img src="/images/icons/views.svg" alt="views" className="views-icon" />
-                  <span className="views">{news.views}</span>
-                </div>
-                <h1 className="news-title">{news.title}</h1>
-                <p className="news-text">{news.text}</p>
-                <div className="info2">
-                  <img src="/images/icons/user.svg" alt="user" className="user-icon1" />
-                  <span className="author1">{news.author}</span>
-                </div>
+          <div class="news-all">
+            <div class="news-1">
+              <div class="info1">
+                <img src="images/icons/date.svg" alt="date" class="date-icon">
+                <span class="date">08.05.2025</span>
+                <img src="images/icons/views.svg" alt="views" class="views-icon">
+                <span class="views">1245</span>
               </div>
-            ))}
+              <h1 class="news-title">
+                It's official: The second season of "Solo Leveling" is announced for 2026!
+              </h1>
+              <p class="news-text">
+                In a short time, Sakura not only found loyal friends, with whom he would go into fire and water, but also
+                became a captain
+              </p>
+              <div class="info2">
+                <img src="images/icons/user.svg" alt="user" class="user-icon1">
+                <span class="author1">Sitrix</span>
+              </div>
+            </div>
+            <div class="news-1">
+              <div class="info1">
+                <img src="images/icons/date.svg" alt="date" class="date-icon">
+                <span class="date">03.09.2025</span>
+                <img src="images/icons/views.svg" alt="views" class="views-icon">
+                <span class="views">2506</span>
+              </div>
+              <h1 class="news-title">
+                It's official: "Attack on Titan" will get a feature film in 2026!
+              </h1>
+              <p class="news-text">
+                After the end of the main series, fans do not say goodbye to the titans! Studio MAPPA has confirmed the work
+                on the film, which will reveal the unknown pages of Eren's past and the Marley Empire. The premiere is
+                scheduled for autumn 2026.
+              </p>
+              <div class="info2">
+                <img src="images/icons/user.svg" alt="user" class="user-icon1">
+                <span class="author1">Artics</span>
+              </div>
+            </div>
+            <div class="news-1">
+              <div class="info1">
+                <img src="images/icons/date.svg" alt="date" class="date-icon">
+                <span class="date">08.07.2025</span>
+                <img src="images/icons/views.svg" alt="views" class="views-icon">
+                <span class="views">1000</span>
+              </div>
+              <h1 class="news-title">
+                A new anime adaptation of "Bleach: Hell Arc" has been announced!
+              </h1>
+              <p class="news-text">
+                Tite Kubo is back! The story will continue in the "Infernal Arc", where Ichigo, together with his former
+                allies, will face dangers that even Kenpachi was silent about. The first teaser is already available, the
+                premiere is winter 2026!
+              </p>
+              <div class="info2">
+                <img src="images/icons/user.svg" alt="user" class="user-icon1">
+                <span class="author1">ArtCraft</span>
+              </div>
+            </div>
+            <div class="news-1">
+              <div class="info1">
+                <img src="images/icons/date.svg" alt="date" class="date-icon">
+                <span class="date">10.05.2025</span>
+                <img src="images/icons/views.svg" alt="views" class="views-icon">
+                <span class="views">1246</span>
+              </div>
+              <h1 class="news-title">
+                "Chainsaw Man" will get a spin-off about the Lord of Darkness
+              </h1>
+              <p class="news-text">
+                Studio MAPPA has officially confirmed the expansion of the franchise. The series will explore the origins of
+                one of the world's most mysterious demons. A dark and stylistically unique work is expected - more details
+                in July 2025.
+              </p>
+              <div class="info2">
+                <img src="images/icons/user.svg" alt="user" class="user-icon1">
+                <span class="author1">biggy</span>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
