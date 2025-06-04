@@ -63,14 +63,14 @@ export default function HomePage() {
               {
                 date: "08.05.2025",
                 views: 1245,
-                title: 'It\'s official: The second season of "Solo Leveling" is announced for 2026!',
+                title: 'Its official: The second season of "Solo Leveling" is announced for 2026!',
                 text: "In a short time, Sakura not only found loyal friends, with whom he would go into fire and water, but also became a captain",
                 author: "Sitrix"
               },
               {
                 date: "03.09.2025",
                 views: 2506,
-                title: 'It\'s official: "Attack on Titan" will get a feature film in 2026!',
+                title: 'Its official: "Attack on Titan" will get a feature film in 2026!',
                 text: "After the end of the main series, fans do not say goodbye to the titans! Studio MAPPA has confirmed the work on the film...",
                 author: "Artics"
               },
