@@ -1,103 +1,143 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <header>
+        <div className="container">
+          <img className="logo" src="/images/logo.svg" alt="logo" />
+          <nav>
+            <ul className="left-menu">
+              <li><a href="#">Main</a></li>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+            <ul className="right-menu">
+              <li><a href="#"><img src="/images/icons/scroll.svg" alt="scroll" className="header-icon" /></a></li>
+              <li><a href="#"><img src="/images/icons/search.svg" alt="search" className="header-icon" /></a></li>
+              <li><a href="#"><img src="/images/icons/settings.svg" alt="settings" className="header-icon" /></a></li>
+              <li><a href="#"><img src="/images/icons/profile.svg" alt="profile" className="header-icon" /></a></li>
+            </ul>
+          </nav>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      <div className="news-article">
+        <div className="news-content">
+          <div className="news-meta">
+            <img src="/images/icons/user.svg" alt="user" className="user-icon" />
+            <span className="author">Sitrix</span>
+            <img src="/images/icons/date.svg" alt="date" className="date-icon" />
+            <span className="date">08 March 2025</span>
+            <img src="/images/icons/views.svg" alt="views" className="views-icon" />
+            <span className="views">1245</span>
+          </div>
+
+          <h1 className="news-title">
+            It's official: The second season of "Solo Leveling" is announced for 2026!
+          </h1>
+          <img src="/images/banner.png" alt="banner" className="news-image" />
+          <p className="news-text">
+            Fans of the popular Solo Leveling anime can rejoice: A-1 Pictures has finally announced
+            about the start of work on the second season of the series. The announcement was made during a special panel at
+            the Anime Expo festival 2025, which featured a short teaser that instantly blew up the web.
+            <br /><br />
+            The continuation of the story of Song Jin-Woo, a hunter who strives to become the strongest in the
+            world, will span an arc "Reds gate" from Jang Sung Rak's original manhwa. The director of the first season,
+            Shunsuke Nakashige, will return to the project, promising even more dynamic battles and deeper character development.
+            The release date is currently set for spring 2026, and streaming will continue to be available on Crunchyroll.
+            <br /><br />
+            "We are impressed by the support of the fans and want to give a gift them something really epic" - commented
+            the representatives of the studio. Meanwhile, the teaser showed a hint of the appearance of new
+            powerful enemies and the long-awaited return of favorite heroes. Is Song Jin-Woo ready for new challenges?
+            We are waiting looking forward to it!
+          </p>
+        </div>
+
+        <aside className="sidebar">
+          <div className="sidebar-content">
+            <h2 className="sidebar-title">Last news</h2>
+            <img src="/images/icons/x.svg" alt="x" className="x-icon" />
+          </div>
+
+          <div className="news-all">
+            {[
+              {
+                date: "08.05.2025",
+                views: 1245,
+                title: 'It\'s official: The second season of "Solo Leveling" is announced for 2026!',
+                text: "In a short time, Sakura not only found loyal friends, with whom he would go into fire and water, but also became a captain",
+                author: "Sitrix"
+              },
+              {
+                date: "03.09.2025",
+                views: 2506,
+                title: 'It\'s official: "Attack on Titan" will get a feature film in 2026!',
+                text: "After the end of the main series, fans do not say goodbye to the titans! Studio MAPPA has confirmed the work on the film...",
+                author: "Artics"
+              },
+              {
+                date: "08.07.2025",
+                views: 1000,
+                title: 'A new anime adaptation of "Bleach: Hell Arc" has been announced!',
+                text: "Tite Kubo is back! The story will continue in the 'Infernal Arc', where Ichigo, together with his former allies, will face dangers...",
+                author: "ArtCraft"
+              },
+              {
+                date: "10.05.2025",
+                views: 1246,
+                title: '"Chainsaw Man" will get a spin-off about the Lord of Darkness',
+                text: "Studio MAPPA has officially confirmed the expansion of the franchise. The series will explore the origins of one of the world's most mysterious demons...",
+                author: "biggy"
+              }
+            ].map((news, index) => (
+              <div key={index} className="news-1">
+                <div className="info1">
+                  <img src="/images/icons/date.svg" alt="date" className="date-icon" />
+                  <span className="date">{news.date}</span>
+                  <img src="/images/icons/views.svg" alt="views" className="views-icon" />
+                  <span className="views">{news.views}</span>
+                </div>
+                <h1 className="news-title">{news.title}</h1>
+                <p className="news-text">{news.text}</p>
+                <div className="info2">
+                  <img src="/images/icons/user.svg" alt="user" className="user-icon1" />
+                  <span className="author1">{news.author}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div className="footer-container-vertical">
+          <div className="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Abount SANEWS</a></li>
+              <li><a href="#">Wikipedia</a></li>
+              <li><a href="#">Cookie</a></li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Whatsapp</a></li>
+              <li><a href="#">X</a></li>
+            </ul>
+          </div>
+          <div className="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
-    </div>
+    </>
   );
 }
