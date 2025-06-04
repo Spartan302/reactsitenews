@@ -32,7 +32,7 @@ export default function HomePage() {
           </div>
 
           <h1 className="news-title">
-            It's official: The second season of "Solo Leveling" is announced for 2026!
+            Its official: The second season of "Solo Leveling" is announced for 2026!
           </h1>
           <img src="/images/banner.png" alt="banner" className="news-image" />
           <p className="news-text">
@@ -41,7 +41,7 @@ export default function HomePage() {
             the Anime Expo festival 2025, which featured a short teaser that instantly blew up the web.
             <br /><br />
             The continuation of the story of Song Jin-Woo, a hunter who strives to become the strongest in the
-            world, will span an arc "Reds gate" from Jang Sung Rak's original manhwa. The director of the first season,
+            world, will span an arc "Reds gate" from Jang Sung Raks original manhwa. The director of the first season,
             Shunsuke Nakashige, will return to the project, promising even more dynamic battles and deeper character development.
             The release date is currently set for spring 2026, and streaming will continue to be available on Crunchyroll.
             <br /><br />
